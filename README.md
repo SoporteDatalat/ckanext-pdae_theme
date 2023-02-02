@@ -43,12 +43,12 @@ To install ckanext-pdae_theme:
 
 2. Clone the source and install it on the virtualenv
 
-    git clone https://github.com/datasketch/ckanext-pdae_theme.git
+    git clone https://github.com/SoporteDatalat/ckanext-pdae_theme.git
     cd ckanext-pdae_theme
-    pip install -e .
-	pip install -r requirements.txt
-
-3. Add `pdae_theme` to the `ckan.plugins` setting in your CKAN
+    pip install -r dev-requirements.txt
+    python setup.py develop	
+    
+3. Add `datalat_theme` to the `ckan.plugins` setting in your CKAN
    config file (by default the config file is located at
    `/etc/ckan/default/ckan.ini`).
 
